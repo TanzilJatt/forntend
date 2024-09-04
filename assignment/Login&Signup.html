@@ -32,6 +32,10 @@
         select option:hover {
             background-color: #1a75ff;
         }
+        .com
+        {
+            color: aliceblue;
+        }
     </style>
 </head>
 
@@ -42,8 +46,8 @@
                 <div class=" fw-bold heading py-3" id="Login">Login Form</div>
                 <div class="fw-bold heading py-3" id="Signup">Signup Form</div>
                 <div class="bt-toggle border border-secondary">
-                    <button type="button" class="btn rounded-end " id="lgbtn">Login</button>
-                    <button type="button" class="btn rounded-start " id="spbtn">Signup</button>
+                    <button type="button" class="btn rounded-end p-3 com" id="lgbtn">Login</button>
+                    <button type="button" class="btn rounded-start p-3 com" id="spbtn">Signup</button>
                 </div>
             </center>
             <form id="Login-Form">
@@ -162,7 +166,9 @@
             signupForm.classList.toggle('d-none', showLogin);
             signup.classList.toggle('d-none', showLogin);
             toggleSignUpButton.classList.toggle('bg-white', showLogin);
+            toggleSignUpButton.classList.toggle('text-primary', showLogin);
             toggleLoginButton.classList.toggle('bg-white', !showLogin);
+            toggleLoginButton.classList.toggle('text-primary', !showLogin);
         }
         toggleSignUpButton.addEventListener('click', () => toggleForms(false));
         toggleLoginButton.addEventListener('click', () => toggleForms(true));
