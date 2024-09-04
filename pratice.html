@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+
+<body>
+    <div>
+        <!-- <h1 class="but">Hello World</h1>
+        <h1 class="but"> tanzil start learning javascript</h1>
+        <button style="background-color: blue;" onclick="handle()">Click Me</button>
+        <div class="date"></div>
+        <button style="background-color: blue;" onclick="viewdate()">Click Me to view date </button>
+
+        shifting images together -->
+        <!-- <img src="./img/img1.jpeg" alt="No image present">
+        <img src="./img/img2.png" style="display: none;" alt="No image present">
+        <button style="background-color: blue;" onclick="firstpic()">Click Me to view first picture </button>
+        <button style="background-color: blue;" onclick="secondpic()">Click Me to view second picture </button> -->
+        <label for="FirstName"> FirstName</label>
+        <input type="text">
+        <label for="SecondName">SecondName </label>
+        <input type="text">
+        <p></p>
+        <p></p>
+        <button type="button" onclick="print()">Press to Print</button>
+    </div>
+    <script>
+        // const handle = ()=> {
+        //     let change ="Tanzil jatt Complete 2 days in jantrah tech";
+        //     const elements = document.getElementsByClassName("but")
+        //     elements[0].innerHTML = "Hello JavaScript";
+        //     elements[1].innerHTML = change;
+        // }
+        // function viewdate(){
+        //     document.getElementsByClassName("date")[0].innerHTML=Date();
+        // } 
+        // function firstpic(){
+        //    document.getElementsByTagName('img')[0].src="./img/img1.jpeg";
+        //    document.getElementsByTagName('img')[1].style.display='none';
+        // }
+        // const secondpic = () =>{
+        //     document.getElementsByTagName('img')[0].src='img/img2.png';
+        //     document.getElementsByTagName('img')[1].style.display='none';
+        // }
+        // function getvalue(e){
+        //      e.FirstName.value();
+        //      e.SecondName.value();
+        // }
+
+
+        const print = () => {
+            // let a = document.getElementsByTagName('input')[0].value;
+            // let b = document.getElementsByTagName('input')[1].value;
+            // document.getElementsByTagName('p')[0].innerHTML = a + ' ' + b;
+            // Obj = {
+            //     name: "Tanzil",
+            //     age: 22,
+            //     myCars: {
+            //         car1: "G WagonR",
+            //         car2: "Honda 125",
+            //         car3: "CD 70"
+            //     }
+            // }
+            // document.getElementsByTagName('p')[0].innerHTML =
+            //     (Obj);
+            //     console.log('Name ' + Obj.name + ' Age ' + Obj['age'] + ' cars ' + Obj.myCars.car1 +', ' + Obj.myCars.car2 + ', ' + Obj.myCars.car3);
+            function person(FullName,Age,Height,Working){
+                this.fullName=FullName;
+                this.age=Age;
+                this.height=Height
+                this.working=Working;
+            }
+
+            const myFather = new person("Muhammad Yamin Asif",56,5.7,"Dirctorate");
+            document.getElementsByTagName('p')[0].innerHTML=myFather.fullName;
+        };
+    </script>
+</body>
+</html>
