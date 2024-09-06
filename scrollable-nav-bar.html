@@ -11,13 +11,18 @@
         .nav {
             border-radius: 70px;
         }
+
+        .position-fixed {
+            left: 8%;
+            top: 4vh;
+        }
     </style>
 </head>
 
 <body>
     <div class="bg-dark" style="height: 200vh;">
-        <div class="container d-flex align-items-center justify-content-center boder bg-white nav";
-            style="height: 15vh;">
+        <div class="container d-flex align-items-center justify-content-center boder bg-white nav position-fixed"
+            id="scrollable" style="height: 15vh;">
             <ul class="list-inline text-bold">
                 <li class="list-inline-item">
                     <a class="text-decoration-none py-3 px-3" href="#">About</a>
@@ -35,7 +40,16 @@
             </ul>
         </div>
     </div>
+    <script>
+        var scrollm = document.getElementById('scrollable');
+        
+        if (scroll) {
 
+        }
+        else {
+
+        }
+    </script>
     <!-- Optional Bootstrap JS and dependencies -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
         integrity="sha384-QgtxFEAZk6Zzj6fBL6AKltl8UeRb40pdtIh6gO6UzTx2Sg+zg2fofWNbOGPPSxGJ5"

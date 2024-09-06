@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>silde show</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
         body {
             margin: 0%;
@@ -16,11 +16,7 @@
             height: 5px;
             width: 10px;
             border: solid rgb(122, 96, 96) 1px;
-        }
-
-        .mysilde img {
-            width: 100%;
-            height: 80vh;
+            background-color: black;
         }
 
         .number {
@@ -34,6 +30,17 @@
         .mysilde {
             position: absolute;
             top: 0%;
+            height: 100vh;
+            left: 10%;
+        }
+
+        .text {
+            position: absolute;
+            top: 94%;
+            left: 50%;
+            color: white;
+            font: bold;
+            font-size: x-large;
         }
     </style>
 </head>
@@ -42,27 +49,27 @@
     <div>
         <div class="mysilde">
             <div class="number">1/1</div>
-            <img src="img/img1.jpeg" alt="">
+            <img src="img/img1.jpeg" alt="" style="height: 100vh;width: 120wh;object-fit: cover;">
             <div class="text">Capture text one</div>
         </div>
-        <div class="mysilde">
+        <!-- <div class="mysilde">
             <div class="number">1/2</div>
-            <img src="img/img2.png" alt="">
+            <img src="img/img2.png" alt="" style="height: 100vh;width: 120wh;">
             <div class="text">Capture text two</div>
         </div>
         <div class="mysilde">
             <div class="number">1/3</div>
-            <img src="img/img3.jpg" alt="">
+            <img src="img/img3.jpg" alt="" style="height: 100vh;width: 120wh;">
             <div class="text">Capture text Three</div>
         </div>
         <div class="mysilde">
             <div class="number">1/4</div>
-            <img src="img/img4.jpg" alt="">
+            <img src="img/img4.jpg" alt="" style="height: 100vh;width: 120wh;">
             <div class="text">Capture text four</div>
-        </div>
+        </div> -->
+        <a href="" onclick="slidePlus(-1)"><i class="bi bi-arrow-left-square-fill" style="height: 5px; width: 5px;"></i></a>
+        <a href="" onclick="slidePlus(1)"><i class="bi bi-arrow-right-square-fill" style="height: 5px; width: 5px;"></i></a>
     </div>
-    <a href="" onclick="slidePlus(-1)"></a>
-    <a href="" onclick="slidePlus(1)"></a>
     <br>
     <div style="text-align:center; width: 100%;">
         <span class="dot" onclick="currentSlide(1)"></span>
@@ -70,6 +77,9 @@
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
     </div>
+    <script>
+        var selector = document.getElementsByClassName('');
+    </script>
 </body>
 
 </html>

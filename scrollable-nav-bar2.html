@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar After 100vh</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+
+    .first-section {
+      height: 100vh;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .content-section {
+      height: 100vh;
+      background-color: #fff;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="first-section">
+    First Section - Full Screen
+  </div>
+
+  <nav class="navbar">
+    Navigation Bar
+  </nav>
+
+  <div class="content-section">
+    Content after the Navbar
+  </div>
+</body>
+</html>
